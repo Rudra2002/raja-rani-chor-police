@@ -1,7 +1,7 @@
 import discord
 import random
 import asyncio
-TOKEN = "Enter Your Disocrd token"
+TOKEN = "Enter Your Discord Token"
 intents = discord.Intents.all()  # this will enable all the intents
 
 client = discord.Client(intents=intents)
@@ -56,5 +56,5 @@ async def on_message(message):
             await user.send(f"You got {card_values[player_index]}!")
             del emojis[player_index]
             del card_values[player_index]
-            
+            await message.channel.send("Game Ended\U0001F480")
 client.run(TOKEN)
