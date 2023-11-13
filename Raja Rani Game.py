@@ -2,7 +2,7 @@ import discord
 import random
 import asyncio
 
-TOKEN = "MTEwNDA3ODE3MDAzMTkxOTE4NQ.Gf_iWA.w6GOB5_i4C9Ff6xJlDybt-PkqhsySbNZfdmDQg"
+TOKEN = "your-discord-token"
 intents = discord.Intents.all()  # this will enable all the intents
 
 client = discord.Client(intents=intents)
